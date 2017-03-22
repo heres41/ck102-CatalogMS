@@ -1,0 +1,13 @@
+---
+applications:
+- services:
+  - CatalogDBService
+  name: ck102-CatalogMS
+  memory: 512m
+  instances: 1
+  host: ck102-CatalogMS
+  path: .
+declared-services:
+  myMicroservicesCloudant:
+    label: cloudantNoSQLDB
+    plan: Shared
